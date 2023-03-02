@@ -2,20 +2,30 @@
 const openModalButton = document.querySelector("#cardCredit");
 const closeModalButton = document.querySelector("#close-modal");
 
+// Objeto modal
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
 
 //Modal do pix
 const openPix = document.querySelector("#pixPag");
 const closePix = document.querySelector("#pixCloseModal");
 
-
-// Objeto modal
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
-
-
 // Objeto modal pix
 const modalPix = document.querySelector("#modalPix");
 const fadePix = document.querySelector("#fadePix");
+
+// modal do boleto bancário
+
+const openBol = document.querySelector("#bolPag")
+const bolClose = document.querySelector("#bolCloseModal");
+
+
+//Objeto do boleto bancário 
+
+const modalBol = document.querySelector("#modalBol");
+const fadeBol = document.querySelector("#fadeBol");
+
+
 
 
 // Abrir/fechar o modal
@@ -43,5 +53,20 @@ const toggleModalPix = () => {
 [openPix, closePix, fadePix].forEach((pix) => {
 
     pix.addEventListener("click", () => toggleModalPix());
+    
+});
+
+
+
+const toggleModalBol = () => {
+
+    [modalBol, fadeBol].forEach((bol) => bol.classList.toggle("hide"));
+
+
+};
+
+[openBol, bolClose, fadeBol].forEach((bol) => {
+
+    bol.addEventListener("click", () => toggleModalBol());
     
 });

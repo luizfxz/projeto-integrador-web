@@ -10,18 +10,20 @@
 </head>
 <body>
 
-
+    <!-- Cabeçalho-->
     <header> 
 
         <img src="" alt="logo">
 
     </header>
 
+    <!--Identificação do usuário  -->
+
     <div id="container">
 
         <div class="container-pess">
             <div class="pess-inform">
-                
+                <!-- box de identificação  do usuário-->
                     <div class="pess-title">
                         <h3> 1. Identificação </h3>
                     </div>
@@ -39,40 +41,32 @@
                             <span> usuario-email-logado </span>
                         </div>
                         <div class="container-content-ende">
-
+                            <!-- Box de endereço do usuário -->
                             <span class="pess-dados-t2"> Endereço para entrega </span>
                             <br>
-                            <div class="pess-ende">    
-                                <div class="custom-box">
-                                    <input type="checkbox" id="cepBusca" required> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <label for="enderecoUser" id="cepBusca"></label> <!-- Personalizar checkbox-->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pess-cep">
-                            <span class="pess-dados-t2"> Pesquisa de CEP </span> <!-- Adicionar js do CEP -->
+                            <div class="pess-ende">
+                                <span class="pess-dados-t2-cep"> Pesquisa de CEP </span> <!-- Adicionar js do CEP -->
                             <br>
                             <div class="container-boxCep">
                                 <label for="cepUser"></label>
-                                <input type="tel" maxlength="9" required id="cepUser" placeholder="Busque aqui..">
+                                <input type="tel" maxlength="9" id="cepUser" required placeholder="Busque aqui..">
 
                                 
+
+                                <div id="numberUser">
+                                    <input type="text" id="numberHome" class="userInfoHome" placeholder="Número *">
+                                    <input type="text" id="infoHome" class="userInfoHome" placeholder="Complemento *">
+                                </div>
+
+                                <input type="text" readonly id="cepBuscaUser">
 
                                 <script src="../js/api-cep.js"></script> <!-- script js para buscar cep, necessário mostrar dados na tela -->
                             </div>
                         </div>
+                        </div>
+                        <!-- Escolha de frete -->
                         <div class="container-entrega-aviso">
-
-                            <input type="checkbox" id="frete" required>
-                            <label for="enderecoUser" id="frete"> frete </label>
-
-                            <br>
-
-                            <input type="checkbox" id="frete" required>
-                            <label for="enderecoUser" id="frete"> frete </label>
-
-                            <br>
-
+                            <!--Informações da entrega -->
                             <span class="entrega-aviso-span"> 
                                 
                                 Informamos que a sua encomenda poderá ficar aguardando retirada em uma agência mais próxima caso o seu endereço tenha restrição de entrega ou seja de difícil acesso.
@@ -87,7 +81,7 @@
                         </div>
 
                         <div class="container-button">
-
+                            <!-- butão para finalizar o pagamento -->
                             <button type="button" name="button" id="button-user-f"> Ir para o pagamento </button>
 
                         </div>
@@ -95,6 +89,7 @@
                 </div>
             </div>
         </div>
+        <!-- Escolha de forma de pagamento-->
         <div class="container-pess">
             <div class="pess-inform">
                 <div class="pess-title">
@@ -108,25 +103,29 @@
                     </span>
                 </div>
                 <div class="pagForm-icon" id="cardCredit">
+                    <!-- Box de cartão de crédito-->
                     <div class="pagFormTitle">
                         <img src="https://cdn-icons-png.flaticon.com/512/423/423468.png" alt="" width="18px" height="20px">
                         <span> Cartão de Crédito </span>
                     </div>
                 </div>
                 <div class="pagForm-icon" id="pixPag">
+                    <!-- Box de pix-->
                     <div class="pagFormTitle">
                         <img src="../imgs/logo-pix-png-920x920-removebg-preview.png" alt="" width="18px" height="18px">
                         <span> Pix à vista </span>
                     </div>
                 </div>
-                <div class="pagForm-icon">
+                <div class="pagForm-icon" id="bolPag">
+                    <!-- box de boleto bancário -->
                     <div class="pagFormTitle">
                             <img src="https://cdn-icons-png.flaticon.com/512/25/25350.png" alt="" width="18px">
                         <span> Boleto bancário à vista </span>
                     </div>
                 </div>
             </div>
-
+            
+            <!-- Modal do pagamento de cartão de crédito-->
             <div id="fade" class="hide"></div>
             <div id="modal" class="hide">
 
@@ -139,6 +138,9 @@
                 <div class="modal-body">
                     <form action="#">
                             <label for="cardusernumber">Número do cartão</label>
+                            <span> <img src="../imgs/cartao1.png" alt="" width="32px" height="16px"></span>
+                            <span> <img src="../imgs/cartao2.png" alt="" width="32px" height="16px"></span>
+                            <span> <img src="../imgs/cartao4.png" alt="" width="32px" height="16px"></span>
                             <input type="text" pattern="[0-9]{16,19}" maxlength="19" placeholder="8888 8888 8888 8888" required class="cardUserInfo">
                             <label for="cardusername">Nome Completo</label>
                             <input placeholder="Digite aqui..." type="text" required class="cardUserInfo">
@@ -178,7 +180,9 @@
                                 <button class="btn">Finalizar Pedido</button>
                     </form>
                 </div>
-            </div>
+            </div>  
+
+            <!-- Modal de pagamento pelo pix -->
 
             <div id="fadePix" class="hide"></div>
             <div id="modalPix" class="hide">
@@ -226,12 +230,27 @@
                     
                 </div>
             </div>
-
-            
         </div>
-    </div>
+        <div id="fadeBol" class="hide"></div>
+            <div id="modalBol" class="hide">
 
+                <div class="modal-header">
+                    <img src="../imgs/logo-pix-png-920x920-removebg-preview.png" alt="" width="32px" height="32px">
+                        <span> Boleto Bancário à vista </span>
+                        <button id="bolCloseModal">&times;</button>
+                </div>
+                
+                <div class="modal-body">
+                    FSDF
+            </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+    <!-- Script dos modais pix/credit/boleto -->
     <script src="../js/modal-card.js"></script>
+    <script src="../js/api-cep.js"></script>
 
 </body>
 </html>

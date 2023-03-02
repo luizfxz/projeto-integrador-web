@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+.rodape{
+    display: flex; /*alinhamento*/
+    background-color: #f3ece5; /*cor de fundo*/
+    height: 250px;/*altura*/
+}
+/*conf div da informaç~eos da empresa*/
+.inf{
+    margin-left: 160px;
+}
+/*configuração do paragrafo dentro do inf*/
+.inf p{
+    margin-top: 20px; /*Margim do topo*/
+}
+  /*conf div do atendimento*/
+.atendimento{
+    margin-left: 90px; /*Margim da esquerda*/
+}
+  /*config div de cartoes*/
+.cartoes {
+    margin-left: 10px; /*Margim da esquerda*/
+}
+/*config imagens do pagamento*/
+ul > img{
+    padding: 5px; /*espaçamento entre as imagens*/
+    margin-left: 38px; /*margin da esquerda*/
+    margin-top: 10px; /*margin do topo da imagens*/
+}
+/*config dos h1*/
+.rodape h1{
+    font-size: 17px; /*Tamanho doa títulos*/
+    font-family: 'Titulo'; /*Fonte dos títulos*/
+}
+/*config do paragrafo*/
+.rodape p{
+    font-size: 17px;
+    font-family: 'Texto';
+}
+/*config instagram*/
+.ated{
+    position: relative; /*não muda de posição, mas fixa na posiçaõ inicial*/
+}
+/*config informção instagram*/
+.instagram {
+    position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+    margin-top: -28px;
+    right: 3px;
+    left: 40px;
+}
+/*config informações email*/
+.email{
+    position: absolute; 
+    margin-top: -25px; 
+    left: 40px;
+}
+/*config informação instagram*/
+.zap{
+    position: absolute; 
+    margin-top: -30px; 
+    left: 40px;
+}
+/*config do paragrafo do instagram*/
+.ated p{
+    color: black;
+    font-size: 17px;
+}
+/*config da lista com imagens*/
+.rodape ul{
+    margin-left: -40px;
+    margin-top: 20px;
+}
+/*config iamgens da ul*/
+ul img{
+    width: 65px;
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="rodape">
+                 
+        <div class="inf col-4">
+            <h1>INFORMAÇÕES DA EMPRESA</h1>
+            <p>A Repono é uma varejista eletrônica brasileira de moda <br> e estilo de vida comprometida em tornar a beleza da moda <br>
+            acessível a todos. <br></p>
+        </div>
+        <div class="atendimento col-4">
+            <h1>ATENDIMENTO AO CLIENTE</h1><br>
+            <div class="ated">
+
+                <img src="footer-img/instagram (2).png" alt="" width="30px" style="margin-left: 4px; padding: 1px;">
+                <p class="instagram">Instagram: @repono</p>
+                <br><div style="padding: 5px;"></div>
+
+                <img src="footer-img/whatsapp.png" alt="" width="40px">
+                <p class="zap">
+                    Central de atendimento (WhastsApp)(31) 9 9852-4123</p>
+                <br><div style="padding: 5px;"></div>
+
+                <img src="footer-img/email.png" alt="" width="35px">
+                <p class="email">
+                Mande-nos email:contato@repono.com.br</p>
+            </div>
+        </div>
+        <div id='container' class="cartoes col-4" >
+            <h1>CARTÕES ACEITOS</h1>
+            <ul>
+                <img src="img/cartao1.png" alt="" >
+                <img src="img/cartao2.png" alt="" >
+                <img src="img/cartao6.png" alt="" ><br>
+                <img src="img/cartao5.png" alt="" >
+                <img src="img/cartao3.png" alt="" >
+                <img src="img/cartao4.png" alt="" >
+            </ul>          
+        </div>
+    </div>
+
+</body>
+</html>

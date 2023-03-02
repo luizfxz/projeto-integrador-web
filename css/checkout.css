@@ -135,7 +135,7 @@ form {
     width: 500px;
     height: 650px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 30px;
 
 
 }
@@ -145,7 +145,7 @@ form {
     margin: auto;
     display: block;
     width: 400px;
-    height: 530px;
+    height: 565px;
     background-color: #fff;
     margin-top: 32px;
     border: 1px solid #000;
@@ -184,12 +184,27 @@ form {
 
 }
 
+.pess-ende {
+
+    margin-top: 6px;
+
+}
+
 .pess-dados-t2 {
 
     font-family: Arial;
     color: red;
     font-weight: bold;
     
+
+}
+
+.pess-dados-t2-cep {
+
+    font-family: Arial;
+    color: #404040;
+    font-size: 14px;
+    padding-top: 16px;
 
 }
 
@@ -201,15 +216,10 @@ form {
 
 }
 
-.custom-box {
-
-    margin-top: 6px;
-
-}
 
 .pess-cep {
 
-    margin: 10px 10px;
+    margin: 15px 10px;
     
 
 }
@@ -222,6 +232,29 @@ form {
     border-radius: 4px;
     border: 1px solid #ccc;
     height: 25px;
+    font-size: 16px;
+
+}
+
+#cepBuscaUser {
+
+    margin-top: 10px;
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 25px;
+    font-size: 16px;
+
+}
+
+.userInfoHome {
+
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
     font-size: 16px;
 
 }
@@ -565,3 +598,170 @@ form {
     justify-content: center;
 
 }
+
+#fadeBol, #modalBol {
+
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+
+
+}
+
+#fadeBol {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modalBol {
+
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    padding: 3.2rem;
+    border-radius: .5rem;
+
+
+}
+
+.modal-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.modal-header > button {
+
+    padding: .6em 1.2rem;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 14px;
+    transform: .2s;
+    
+}
+
+.modal-header > span {
+
+    font-family: 'Arial';
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+
+
+}
+
+.modal-body p {
+
+    margin-bottom: 1rem;
+
+
+}
+
+#modalBol.hide, 
+#fadeBol.hide {
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+#modalBol.hide {
+
+    top: 0;
+
+}
+
+.rodape{
+    background-color: #f3ece5; /*cor de fundo*/
+    height: 250px;/*altura*/
+}
+/*conf div da informaç~eos da empresa*/
+.inf{
+    margin-left: 160px;
+}
+/*configuração do paragrafo dentro do inf*/
+.inf p{
+    margin-top: 20px; /*Margim do topo*/
+}
+  /*conf div do atendimento*/
+.atendimento{
+    margin-left: 90px; /*Margim da esquerda*/
+}
+  /*config div de cartoes*/
+.cartoes {
+    margin-left: 10px; /*Margim da esquerda*/
+}
+/*config imagens do pagamento*/
+ul > img{
+    padding: 5px; /*espaçamento entre as imagens*/
+    margin-left: 38px; /*margin da esquerda*/
+    margin-top: 10px; /*margin do topo da imagens*/
+}
+/*config dos h1*/
+.rodape h1{
+    font-size: 17px; /*Tamanho doa títulos*/
+    font-family: 'Titulo'; /*Fonte dos títulos*/
+}
+/*config do paragrafo*/
+.rodape p{
+    font-size: 17px;
+    font-family: 'Texto';
+}
+/*config instagram*/
+.ated{
+    position: relative; /*não muda de posição, mas fixa na posiçaõ inicial*/
+}
+/*config informção instagram*/
+.instagram {
+    position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
+    margin-top: -28px;
+    right: 3px;
+    left: 40px;
+}
+/*config informações email*/
+.email{
+    position: absolute; 
+    margin-top: -25px; 
+    left: 40px;
+}
+/*config informação instagram*/
+.zap{
+    position: absolute; 
+    margin-top: -30px; 
+    left: 40px;
+}
+/*config do paragrafo do instagram*/
+.ated p{
+    color: black;
+    font-size: 17px;
+}
+/*config da lista com imagens*/
+.rodape ul{
+    margin-left: -40px;
+    margin-top: 20px;
+}
+/*config iamgens da ul*/
+ul img{
+    width: 65px;
+}
+
