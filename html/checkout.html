@@ -13,7 +13,7 @@
     <!-- Cabeçalho-->
     <header> 
 
-        <img src="" alt="logo">
+        <a href="#"><img src="../imgs/logo.png" alt="logo"></a>
 
     </header>
 
@@ -146,8 +146,8 @@
                             <input placeholder="Digite aqui..." type="text" required class="cardUserInfo">
                             <br>
                             <label for="cardusercpf">CPF do Titular</label>
-                            <input placeholder="Digite aqui..." type="text" required class="cardUserInfo">
-                            <span class="carduservalidade"> Validade: </span>
+                            <input placeholder="Digite aqui..." type="text" required class="cardUserInfo" maxlength="14">
+                            <span class="carduservalidade" > Validade: </span>
                             <select id="cardusermes" required>
                                 <option value="" class="hide">Mês</option>
                                 <option value="01">Janeiro</option>
@@ -235,22 +235,51 @@
             <div id="modalBol" class="hide">
 
                 <div class="modal-header">
-                    <img src="../imgs/logo-pix-png-920x920-removebg-preview.png" alt="" width="32px" height="32px">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25350.png" alt="" width="32px" height="32px">
                         <span> Boleto Bancário à vista </span>
                         <button id="bolCloseModal">&times;</button>
                 </div>
                 
                 <div class="modal-body">
-                    FSDF
+                    <div id="content-boleto">
+                            <a href="../imgs/cartao2.png" id="imprimir_boleto"><img src="https://cdn-icons-png.flaticon.com/512/25/25350.png" alt="boleto" width="18px" style="margin-right: 5px; margin-bottom: 3px;">  IMPRIMIR BOLETO </a>
+                    </div>
+                    <div id="content-boxBoleto">
+                        <div id="content-boxBoleto-info">
+                            <span class="boxBoleto-cn">Deseja pagar online? Utilize o código de barras
+                            </span>
+                        </div>
+                        <div id="container-"><span class="codBarra-boleto"> 130683189175511941351</span></div>
+                        <div id="container-infoBoleto">
+                            <ul class="pagPixBox-ins">
+                                <li class="pagPixbox-insItem">Data de vencimento: 13/04/2023;</li>
+                                <li class="pagPixbox-insItem">O boleto pode demorar até <strong>2 dias úteis para ser compensado</strong>;</li>
+                                <li class="pagPixbox-insItem">Você reberá um e-mail informando se o seu pedido foi aprovado.</li>
+                           </ul>
+                        </div>
+
+                        <button id="pagPixBox-bnt"> Finalizar pedido </button>
+
+
+                    </div>
             </div>
+        </div>
     </div>
-    <footer>
-        
-    </footer>
+    <div id="container-pess">
+        <div class="pess-inform">
+            <div class="pess-title">
+                <h3> 3. Carrinho </h3>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- Script dos modais pix/credit/boleto -->
     <script src="../js/modal-card.js"></script>
     <script src="../js/api-cep.js"></script>
+    <script src="../js/imprimir-boleto.js"></script>
 
 </body>
 </html>

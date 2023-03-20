@@ -49,23 +49,23 @@ body {
 
 header {
 
-    background-color: #737373;
+
+    background-color: #ffffff;
     width: 100%;
     top: 0;
     height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 60px;
 
 }
 
 #container {
 
-    max-width: 82rem;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
+    align-items: center;
     justify-content: space-around;
-
-    
 }
 
 
@@ -691,77 +691,70 @@ form {
 
 }
 
-.rodape{
-    background-color: #f3ece5; /*cor de fundo*/
-    height: 250px;/*altura*/
+
+
+
+#content-boleto a { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+    border: 1px solid black;
+    color: #000;
+    font-family: 'Arial';
+
+    font-size: 16px;
+    text-decoration: none;
+
 }
-/*conf div da informaç~eos da empresa*/
-.inf{
-    margin-left: 160px;
+
+#content-boxBoleto-info {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
 }
-/*configuração do paragrafo dentro do inf*/
-.inf p{
-    margin-top: 20px; /*Margim do topo*/
+
+#content-boxBoleto-info .boxBoleto-cn {
+
+    font-size: 15px;
+    font-family: 'Arial';
+
+
 }
-  /*conf div do atendimento*/
-.atendimento{
-    margin-left: 90px; /*Margim da esquerda*/
+
+.codBarra-boleto {
+
+    padding: 5px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+
 }
-  /*config div de cartoes*/
-.cartoes {
-    margin-left: 10px; /*Margim da esquerda*/
+
+#container-pess {
+
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    border-radius: 30px;
+
 }
-/*config imagens do pagamento*/
-ul > img{
-    padding: 5px; /*espaçamento entre as imagens*/
-    margin-left: 38px; /*margin da esquerda*/
-    margin-top: 10px; /*margin do topo da imagens*/
+
+.pess-inform {
+
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 565px;
+    background-color: #fff;
+    margin-top: 32px;
+    border: 1px solid #000;
+
 }
-/*config dos h1*/
-.rodape h1{
-    font-size: 17px; /*Tamanho doa títulos*/
-    font-family: 'Titulo'; /*Fonte dos títulos*/
-}
-/*config do paragrafo*/
-.rodape p{
-    font-size: 17px;
-    font-family: 'Texto';
-}
-/*config instagram*/
-.ated{
-    position: relative; /*não muda de posição, mas fixa na posiçaõ inicial*/
-}
-/*config informção instagram*/
-.instagram {
-    position: absolute; /*indica que o elemento ficará em uma posição fixa em relação à página.*/
-    margin-top: -28px;
-    right: 3px;
-    left: 40px;
-}
-/*config informações email*/
-.email{
-    position: absolute; 
-    margin-top: -25px; 
-    left: 40px;
-}
-/*config informação instagram*/
-.zap{
-    position: absolute; 
-    margin-top: -30px; 
-    left: 40px;
-}
-/*config do paragrafo do instagram*/
-.ated p{
-    color: black;
-    font-size: 17px;
-}
-/*config da lista com imagens*/
-.rodape ul{
-    margin-left: -40px;
-    margin-top: 20px;
-}
-/*config iamgens da ul*/
-ul img{
-    width: 65px;
-}
+
 

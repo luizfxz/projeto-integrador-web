@@ -3,6 +3,7 @@ let cepBusca = document.querySelector('#cepBuscaUser');
 let numberHome = document.querySelector("#numberHome");
 let infoHome = document.querySelector("#infoHome");
 
+let numeroCasa = numberHome.value;
 
 cepUser.addEventListener('blur', function(e) {
 
@@ -17,8 +18,8 @@ cepUser.addEventListener('blur', function(e) {
 
 function popularForm (resposta) {
 
-    console.log(numberHome);
+    console.log(numeroCasa);
     
-    cepBusca.value = resposta.logradouro + ", " + String(numberHome) + resposta.bairro + ", " + resposta.localidade + ", " + resposta.uf;
+    cepBusca.value = resposta.logradouro + ", " + numeroCasa + resposta.bairro + ", " + resposta.localidade + ", " + resposta.uf;
 
-}
+};
