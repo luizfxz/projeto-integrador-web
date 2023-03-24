@@ -87,6 +87,7 @@ function addCarrinhoClicked(event){
 function addProdutoNoCarrinho(titulo, preco, produtoImagem) {
     var carrinhoShopBox = document.createElement("div");
     carrinhoShopBox.classList.add("carrinho-caixa");
+
     var carrinhoItens = document.getElementsByClassName("carrinho-conteudo")[0];
     var carrinhoItensNomes = carrinhoItens.getElementsByClassName("carrinho-produto-titulo");
     for (var i = 0; i < carrinhoItensNomes.length; i++){

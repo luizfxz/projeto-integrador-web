@@ -101,6 +101,19 @@ form {
 
 }
 
+.cardUserCvc {
+
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+}
+
 .btn {
 
     border-radius: 5px;
@@ -736,12 +749,23 @@ form {
 
 }
 
-#container-pess {
+.container-pess-2 {
 
     width: 500px;
     height: 650px;
     background-color: white;
     border-radius: 30px;
+    display: none;
+
+}
+
+.container-pess-3 {
+
+    width: 500px;
+    height: 650px;
+    background-color: white;
+    border-radius: 30px;
+    display: none;
 
 }
 
@@ -756,5 +780,59 @@ form {
     border: 1px solid #000;
 
 }
+
+.carrinho-caixa {
+
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin: 10px;
+    background-color: #F1F1F1;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.carrinho-img {
+
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+
+}
+
+.carrinho-produto-titulo {
+
+    font-size: 18px;
+
+}
+
+.carrinho-preco {
+
+    font-size: 16px;
+
+}
+
+.carrinho-quantidade {
+
+    border: 1px solid var(--color-1);
+    outline-color: var(--color-5);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+
+} 
+.carrinho-remover {
+
+    width: 22px;
+    color: red;
+    cursor: pointer;
+
+}
+
 
 
