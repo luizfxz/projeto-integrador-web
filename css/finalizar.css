@@ -1,0 +1,165 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+
+    background-color: #f2f2f2;
+
+}
+
+header {
+
+
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+#content-main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#content-main h2 {
+
+    margin: 15px;
+    font-size: 45px;
+    font-weight: 500;
+
+}
+
+#content-main h3 {
+
+    margin-top: 55px;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+#content-main p {
+
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+#content-main a {
+
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+
+}
+
+#content-main a:hover {
+
+    text-decoration: underline;
+
+
+}
+
+#content-main a:visited {
+
+    text-decoration: none;
+    color: #000;
+
+}
+
+@media screen and (max-width:700px) {
+    .rodape .col-4 {
+    width: 100%;
+    }
+    .rodape .info {
+    margin-bottom: 50px;
+    }
+    .rodape .contato {
+    margin-bottom: 50px;
+    }
+}
+
+.rodape {
+
+    background-color: #010101;
+    color: #f2f2f2;
+    line-height: 1.7;
+
+}
+    
+
+.rodape h1 {
+    font-size: 17px;
+    font-family: 'titulo';
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+    
+
+.rodape p {
+
+    font-size: 17px;
+    font-family: 'texto';
+
+}
+    
+.info {
+
+    width: 70%;
+    margin: 0 auto;
+}
+    
+.contato {
+
+    width: 70%;
+    margin: 0 auto;
+
+}
+    .contato img {
+    width: 35px;
+    display: inline;
+    margin-right: 10px;
+    }
+
+    .contato p {
+    display: inline;
+    }
+    
+    .pagamento {
+    width: 70%;
+    margin: 0 auto;
+    }
+    
+    
+    .pagamento img {
+    width: 120px;
+    padding: 20px;
+    }
+
+    @media screen and (max-width:700px) {
+    .rodape .col-4 {
+    width: 100%;
+    }
+    .rodape .info {
+    margin-bottom: 50px;
+    }
+    .rodape .contato {
+    margin-bottom: 50px;
+    }
+    }
+
