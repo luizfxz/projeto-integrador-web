@@ -973,6 +973,29 @@ form {
 
 }
 
+@media screen and (max-width: 400px) {
+
+    .btn {
+
+        margin: 15px;
+
+    }
+
+    #modalPix {
+
+        top: 49%;
+        left: 50%;
+        height: 93%;
+        max-width: 96%;
+        padding: 1.2rem;
+
+    }
+
+
+}
+
+
+
 
 
 
