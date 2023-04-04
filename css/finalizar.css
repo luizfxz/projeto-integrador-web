@@ -10,6 +10,7 @@
 body {
 
     background-color: #f2f2f2;
+    overflow-y: hidden;
 
 }
 
@@ -82,31 +83,12 @@ header {
 
 }
 
-@media screen and (max-width:700px) {
-    .rodape .col-4 {
-    width: 100%;
-    }
-    .rodape .info {
-    margin-bottom: 50px;
-    }
-    .rodape .contato {
-    margin-bottom: 50px;
-    }
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
- 
-
-}
-
 .rodape {
 
     background-color: #010101;
     color: #f2f2f2;
     line-height: 1.7;
+    margin-top: 230px;
 
 }
     
@@ -138,36 +120,49 @@ footer {
     margin: 0 auto;
 
 }
-    .contato img {
+.contato img {
     width: 35px;
     display: inline;
     margin-right: 10px;
-    }
+}
 
-    .contato p {
+.contato p {
     display: inline;
-    }
+}
     
-    .pagamento {
+.pagamento {
     width: 70%;
     margin: 0 auto;
-    }
+}
     
     
-    .pagamento img {
+.pagamento img {
     width: 120px;
     padding: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+    #content-main {
+
+        margin: 35px;
+
     }
 
-    @media screen and (max-width:700px) {
+    .rodape {
+
+        margin-top: 44px;
+
+    }
+
     .rodape .col-4 {
-    width: 100%;
+        width: 100%;
     }
     .rodape .info {
-    margin-bottom: 50px;
+        margin-bottom: 50px;
     }
     .rodape .contato {
-    margin-bottom: 50px;
+        margin-bottom: 50px;
     }
-    }
+}
 
